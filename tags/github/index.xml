@@ -1,11 +1,9 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Learn IT possible.</title>
-        <link>http://example.org/</link>
-        <description>Learn IT possible.</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sat, 27 Feb 2021 21:18:30 &#43;0800</lastBuildDate>
-            <atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
-        <item>
+        <title>GitHub - 标签 - Learn IT possible.</title>
+        <link>http://example.org/tags/github/</link>
+        <description>GitHub - 标签 - Learn IT possible.</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sat, 27 Feb 2021 21:18:30 &#43;0800</lastBuildDate><atom:link href="http://example.org/tags/github/" rel="self" type="application/rss+xml" /><item>
     <title>如何提升 Clone GitHub 项目的速度</title>
     <link>http://example.org/202102271800/</link>
     <pubDate>Sat, 27 Feb 2021 21:18:30 &#43;0800</pubDate>
