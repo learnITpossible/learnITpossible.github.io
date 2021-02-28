@@ -3,7 +3,14 @@
         <title>所有文章 - Learn IT possible.</title>
         <link>http://example.org/posts/</link>
         <description>所有文章 | Learn IT possible.</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sat, 27 Feb 2021 21:18:30 &#43;0800</lastBuildDate><atom:link href="http://example.org/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sun, 28 Feb 2021 20:14:22 &#43;0800</lastBuildDate><atom:link href="http://example.org/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>【Go 学习笔记】Go 环境搭建</title>
+    <link>http://example.org/202102282000/</link>
+    <pubDate>Sun, 28 Feb 2021 20:14:22 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/202102282000/</guid>
+    <description><![CDATA[Go 环境搭建]]></description>
+</item><item>
     <title>如何提升 Clone GitHub 项目的速度</title>
     <link>http://example.org/202102271800/</link>
     <pubDate>Sat, 27 Feb 2021 21:18:30 &#43;0800</pubDate>
