@@ -5,37 +5,37 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>【Go 学习笔记】Go 环境搭建 - Learn IT possible.</title><meta name="Description" content="Go 环境搭建"><meta property="og:title" content="【Go 学习笔记】Go 环境搭建" />
-<meta property="og:description" content="Go 环境搭建" />
+        <title>【Go 学习笔记】基本程序结构 - Learn IT possible.</title><meta name="Description" content="Go 基本程序结构"><meta property="og:title" content="【Go 学习笔记】基本程序结构" />
+<meta property="og:description" content="Go 基本程序结构" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://example.org/202102282000/" /><meta property="og:image" content="http://example.org/logo.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-02-28T20:14:22&#43;08:00" />
-<meta property="article:modified_time" content="2021-02-28T20:14:22&#43;08:00" />
+<meta property="og:url" content="http://example.org/202103012200/" /><meta property="og:image" content="http://example.org/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-03-01T21:52:04&#43;08:00" />
+<meta property="article:modified_time" content="2021-03-01T21:52:04&#43;08:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="http://example.org/logo.png"/>
 
-<meta name="twitter:title" content="【Go 学习笔记】Go 环境搭建"/>
-<meta name="twitter:description" content="Go 环境搭建"/>
+<meta name="twitter:title" content="【Go 学习笔记】基本程序结构"/>
+<meta name="twitter:description" content="Go 基本程序结构"/>
 <meta name="application-name" content="LoveIt">
 <meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://example.org/202102282000/" /><link rel="prev" href="http://example.org/202102271800/" /><link rel="next" href="http://example.org/202103012200/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://example.org/202103012200/" /><link rel="prev" href="http://example.org/202102282000/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "【Go 学习笔记】Go 环境搭建",
+        "headline": "【Go 学习笔记】基本程序结构",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "http:\/\/example.org\/202102282000\/"
-        },"genre": "posts","keywords": "golang","wordcount":  237 ,
-        "url": "http:\/\/example.org\/202102282000\/","datePublished": "2021-02-28T20:14:22+08:00","dateModified": "2021-02-28T20:14:22+08:00","publisher": {
+            "@id": "http:\/\/example.org\/202103012200\/"
+        },"genre": "posts","keywords": "golang","wordcount":  386 ,
+        "url": "http:\/\/example.org\/202103012200\/","datePublished": "2021-03-01T21:52:04+08:00","dateModified": "2021-03-01T21:52:04+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
                 "@type": "Person",
                 "name": "Mark"
-            },"description": "Go 环境搭建"
+            },"description": "Go 基本程序结构"
     }
     </script></head>
     <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
@@ -104,9 +104,9 @@
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">目录</h2>
             <div class="toc-content" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animated flipInX">【Go 学习笔记】Go 环境搭建</h1><div class="post-meta">
+        </div><article class="page single"><h1 class="single-title animated flipInX">【Go 学习笔记】基本程序结构</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Mark</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/go-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"><i class="far fa-folder fa-fw"></i>Go 学习笔记</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-02-28">2021-02-28</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 237 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-03-01">2021-03-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 386 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 1 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -115,24 +115,96 @@
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
-    <li><a href="#1-配置环境">1. 配置环境</a></li>
-    <li><a href="#2-安装-ide">2. 安装 IDE</a></li>
-    <li><a href="#3-hello-world">3. Hello World！</a></li>
+    <li><a href="#变量常量">变量、常量</a>
+      <ul>
+        <li><a href="#变量定义">变量定义</a></li>
+        <li><a href="#语法糖">语法糖</a></li>
+        <li><a href="#常量定义">常量定义</a></li>
+      </ul>
+    </li>
+    <li><a href="#数据类型">数据类型</a>
+      <ul>
+        <li><a href="#基本数据类型">基本数据类型</a></li>
+        <li><a href="#类型转换">类型转换</a></li>
+        <li><a href="#string">string</a></li>
+      </ul>
+    </li>
+    <li><a href="#运算符">运算符</a>
+      <ul>
+        <li><a href="#算术运算符">算术运算符</a></li>
+        <li><a href="#比较运算符">比较运算符</a></li>
+        <li><a href="#逻辑运算符">逻辑运算符</a></li>
+        <li><a href="#位运算符">位运算符</a></li>
+      </ul>
+    </li>
+    <li><a href="#条件和循环">条件和循环</a>
+      <ul>
+        <li><a href="#for">for</a></li>
+        <li><a href="#if">if</a></li>
+        <li><a href="#switch">switch</a></li>
+      </ul>
+    </li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><p>系统：Mac</p>
-<h2 id="1-配置环境">1. 配置环境</h2>
-<p>使用 homebrew 安装：</p>
-<p><code>brew install go</code></p>
-<p>go 1.8 版本之后不用额外配置 GOPATH、PATH，会默认设置，使用</p>
-<p><code>go dev</code></p>
-<p>查看默认环境配置；安装完成后运行如下命令进行验证：</p>
-<p><code>go version</code></p>
-<h2 id="2-安装-ide">2. 安装 IDE</h2>
-<p>下载 GoLand，不要到网上找各种破解方法，直接上淘宝买一个账号，注册。</p>
-<h2 id="3-hello-world">3. Hello World！</h2>
-<p>使用 GoLand 新建 Project（不需要一定建在 GOPATH 下），例如：demo；再在 demo 下新建目录 src；
-然后新建文件 hello_world.go，输入以下代码：</p>
+            </div><div class="content" id="content"><h2 id="变量常量">变量、常量</h2>
+<h3 id="变量定义">变量定义</h3>
+<p>方式一：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-go" data-lang="go"><span class="kd">var</span> <span class="nx">a</span> <span class="kt">int</span> <span class="p">=</span> <span class="mi">1</span>
+<span class="kd">var</span> <span class="nx">b</span> <span class="p">=</span> <span class="mi">1</span>
+
+<span class="kd">var</span> <span class="nx">a</span><span class="p">,</span> <span class="nx">b</span> <span class="p">=</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>方式二：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-go" data-lang="go"><span class="kd">var</span> <span class="p">(</span>
+    <span class="nx">a</span> <span class="kt">int</span> <span class="p">=</span> <span class="mi">1</span>
+    <span class="nx">b</span> <span class="p">=</span> <span class="mi">1</span>
+<span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>方式三：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-go" data-lang="go"><span class="nx">a</span> <span class="o">:=</span> <span class="mi">1</span>
+<span class="nx">b</span> <span class="o">:=</span> <span class="mi">1</span>
+
+<span class="nx">a</span><span class="p">,</span> <span class="nx">b</span> <span class="o">:=</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="语法糖">语法糖</h3>
+<p>交换两个数</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-go" data-lang="go"><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span> <span class="p">=</span> <span class="nx">b</span><span class="p">,</span> <span class="nx">a</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="常量定义">常量定义</h3>
+<p>连续常量定义</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -142,30 +214,93 @@
 </span><span class="lnt">5
 </span><span class="lnt">6
 </span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-go" data-lang="go"><span class="kn">package</span> <span class="nx">main</span>
-
-<span class="kn">import</span> <span class="s">&#34;fmt&#34;</span>
-
-<span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;Hello World!&#34;</span><span class="p">)</span>
-<span class="p">}</span>
+<pre class="chroma"><code class="language-go" data-lang="go"><span class="kd">const</span> <span class="p">(</span>
+    <span class="nx">Monday</span> <span class="p">=</span> <span class="kc">iota</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="nx">Tuesday</span>
+    <span class="nx">Wednesday</span>
+    <span class="nx">Thursday</span>
+    <span class="nx">Friday</span>
+    <span class="nx">Saturday</span>
+    <span class="nx">Sunday</span>
+<span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>GoLand 中直接运行，或者到 src 目录下运行</p>
-<p><code>go run hello_world.go</code></p></div><div class="post-footer" id="post-footer">
+</div><p>则 Monday 到 Sunday 的值分别为 1 到 7</p>
+<h2 id="数据类型">数据类型</h2>
+<h3 id="基本数据类型">基本数据类型</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-go" data-lang="go"><span class="kt">bool</span>
+
+<span class="kt">string</span>
+
+<span class="kt">int</span> <span class="kt">int8</span> <span class="kt">int16</span> <span class="kt">int32</span> <span class="kt">int64</span>
+
+<span class="kt">uint</span> <span class="kt">uint8</span> <span class="kt">uint16</span> <span class="kt">uint32</span> <span class="kt">uint64</span> <span class="kt">uintptr</span>
+
+<span class="kt">byte</span> <span class="c1">// alias of int8
+</span><span class="c1"></span>
+<span class="kt">rune</span> <span class="c1">// alias of int32
+</span><span class="c1"></span>
+<span class="kt">float32</span> <span class="kt">float64</span>
+
+<span class="kt">complex64</span> <span class="kt">complex128</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="类型转换">类型转换</h3>
+<p>不支持隐式类型转换</p>
+<h3 id="string">string</h3>
+<p>string 类型的默认值为空字符串，不是 nil</p>
+<h2 id="运算符">运算符</h2>
+<h3 id="算术运算符">算术运算符</h3>
+<p>没有 ++i，&ndash;i</p>
+<h3 id="比较运算符">比较运算符</h3>
+<p>== 可以比较数组，前提是数组长度一致</p>
+<h3 id="逻辑运算符">逻辑运算符</h3>
+<h3 id="位运算符">位运算符</h3>
+<p>&amp;^ 按位清零，可以理解为 &amp; 与 ^ 的组合</p>
+<h2 id="条件和循环">条件和循环</h2>
+<h3 id="for">for</h3>
+<p>Go 只有 for 一种循环；for condition 相当于其他语言的 while(confition)</p>
+<h3 id="if">if</h3>
+<p>支持变量赋值</p>
+<h3 id="switch">switch</h3>
+<p>条件表达式不限制为常量或整数</p>
+<p>单个 case 中，可以出现多个结果选项，用逗号分开</p>
+<p>不需要 break 语句</p>
+<p>可以不设定 switch 后的条件表达式，这种情况下，与多个 if&hellip;else&hellip; 的逻辑相同</p></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>更新于 2021-02-28</span>
+                <span>更新于 2021-03-01</span>
             </div>
             <div class="post-info-license"></div>
         </div>
         <div class="post-info-line">
             <div class="post-info-md"></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="http://example.org/202102282000/" data-hashtag="golang"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://example.org/202102282000/" data-title="【Go 学习笔记】Go 环境搭建"><i class="fab fa-weibo fa-fw"></i></a></span>
+                <span><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="http://example.org/202103012200/" data-hashtag="golang"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://example.org/202103012200/" data-title="【Go 学习笔记】基本程序结构"><i class="fab fa-weibo fa-fw"></i></a></span>
             </div>
         </div>
     </div>
@@ -177,8 +312,7 @@
         </section>
     </div>
 
-    <div class="post-nav"><a href="/202102271800/" class="prev" rel="prev" title="如何提升 Clone GitHub 项目的速度"><i class="fas fa-angle-left fa-fw"></i>如何提升 Clone GitHub 项目的速度</a>
-            <a href="/202103012200/" class="next" rel="next" title="【Go 学习笔记】基本程序结构">【Go 学习笔记】基本程序结构<i class="fas fa-angle-right fa-fw"></i></a></div>
+    <div class="post-nav"><a href="/202102282000/" class="prev" rel="prev" title="【Go 学习笔记】Go 环境搭建"><i class="fas fa-angle-left fa-fw"></i>【Go 学习笔记】Go 环境搭建</a></div>
 </div>
 <div id="comments"></div></article></div>
             </main><footer class="footer">
