@@ -29,7 +29,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "http:\/\/example.org\/202103022200\/"
-        },"genre": "posts","keywords": "golang","wordcount":  130 ,
+        },"genre": "posts","keywords": "golang","wordcount":  334 ,
         "url": "http:\/\/example.org\/202103022200\/","datePublished": "2021-03-02T21:50:32+08:00","dateModified": "2021-03-02T21:50:32+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -106,7 +106,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">【Go 学习笔记】常用集合</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Mark</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/go-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"><i class="far fa-folder fa-fw"></i>Go 学习笔记</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-03-02">2021-03-02</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 130 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-03-02">2021-03-02</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 334 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 1 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -121,6 +121,7 @@
         <li><a href="#切片">切片</a></li>
       </ul>
     </li>
+    <li><a href="#映射">映射</a></li>
   </ul>
 </nav></div>
             </div><div class="content" id="content"><h2 id="数组和切片">数组和切片</h2>
@@ -169,6 +170,99 @@
 <span class="nx">slice</span> <span class="p">=</span> <span class="nb">append</span><span class="p">(</span><span class="nx">slice</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
 
 <span class="nx">slice</span> <span class="p">=</span> <span class="nx">slice</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="映射">映射</h2>
+<p>1、map 的定义</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-go" data-lang="go"><span class="nx">m1</span> <span class="o">:=</span> <span class="kd">map</span><span class="p">[</span><span class="kd">type</span><span class="p">]</span><span class="kd">type</span><span class="p">{</span><span class="nx">key</span><span class="p">:</span><span class="nx">value</span><span class="p">}</span>
+<span class="nx">m2</span> <span class="o">:=</span> <span class="kd">map</span><span class="p">[</span><span class="kd">type</span><span class="p">]</span><span class="kd">type</span><span class="p">{}</span>
+<span class="nx">m3</span> <span class="o">:=</span> <span class="nb">make</span><span class="p">(</span><span class="kd">map</span><span class="p">[</span><span class="kd">type</span><span class="p">]</span><span class="kd">type</span><span class="p">,</span> <span class="nx">capacity</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>2、map 的访问</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-go" data-lang="go"><span class="nx">m</span><span class="p">[</span><span class="nx">key</span><span class="p">]</span>
+
+<span class="k">if</span> <span class="nx">v</span><span class="p">,</span> <span class="nx">ok</span> <span class="o">:=</span> <span class="nx">m</span><span class="p">[</span><span class="nx">key</span><span class="p">];</span> <span class="nx">ok</span> <span class="p">{</span>
+    <span class="c1">// do something
+</span><span class="c1"></span><span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="c1">// do something
+</span><span class="c1"></span><span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>当 key 不存在时，返回零值，不能通过返回 nil 判断 key 是否存在</p>
+<p>3、遍历 map</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-go" data-lang="go"><span class="k">for</span> <span class="nx">k</span><span class="p">,</span> <span class="nx">v</span> <span class="o">:=</span> <span class="k">range</span> <span class="nx">m</span> <span class="p">{</span>
+
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>4、使用 map 实现工厂模式</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-go" data-lang="go"><span class="kd">func</span> <span class="nf">TestFactory</span><span class="p">(</span><span class="nx">t</span> <span class="o">*</span><span class="nx">testing</span><span class="p">.</span><span class="nx">T</span><span class="p">)</span> <span class="p">{</span>
+   <span class="nx">factory</span> <span class="o">:=</span> <span class="kd">map</span><span class="p">[</span><span class="kt">int</span><span class="p">]</span><span class="kd">func</span><span class="p">(</span><span class="nx">op</span> <span class="kt">int</span><span class="p">)</span> <span class="kt">int</span><span class="p">{}</span>
+   <span class="nx">factory</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="p">=</span> <span class="kd">func</span><span class="p">(</span><span class="nx">op</span> <span class="kt">int</span><span class="p">)</span> <span class="kt">int</span> <span class="p">{</span> <span class="k">return</span> <span class="nx">op</span> <span class="p">}</span>
+   <span class="nx">factory</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="p">=</span> <span class="kd">func</span><span class="p">(</span><span class="nx">op</span> <span class="kt">int</span><span class="p">)</span> <span class="kt">int</span> <span class="p">{</span> <span class="k">return</span> <span class="nx">op</span> <span class="o">*</span> <span class="nx">op</span> <span class="p">}</span>
+   <span class="nx">factory</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="p">=</span> <span class="kd">func</span><span class="p">(</span><span class="nx">op</span> <span class="kt">int</span><span class="p">)</span> <span class="kt">int</span> <span class="p">{</span> <span class="k">return</span> <span class="nx">op</span> <span class="o">*</span> <span class="nx">op</span> <span class="o">*</span> <span class="nx">op</span> <span class="p">}</span>
+   <span class="nx">t</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="nx">factory</span><span class="p">[</span><span class="mi">1</span><span class="p">](</span><span class="mi">2</span><span class="p">),</span> <span class="nx">factory</span><span class="p">[</span><span class="mi">2</span><span class="p">](</span><span class="mi">2</span><span class="p">),</span> <span class="nx">factory</span><span class="p">[</span><span class="mi">3</span><span class="p">](</span><span class="mi">2</span><span class="p">))</span> <span class="c1">// 2 4 8
+</span><span class="c1"></span><span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>5、使用 map 实现 set</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-go" data-lang="go"><span class="kd">func</span> <span class="nf">TestSet</span><span class="p">(</span><span class="nx">t</span> <span class="o">*</span><span class="nx">testing</span><span class="p">.</span><span class="nx">T</span><span class="p">)</span> <span class="p">{</span>
+   <span class="nx">mySet</span> <span class="o">:=</span> <span class="kd">map</span><span class="p">[</span><span class="kt">int</span><span class="p">]</span><span class="kt">bool</span><span class="p">{}</span>
+   <span class="nx">mySet</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="p">=</span> <span class="kc">true</span>
+   <span class="nx">mySet</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="p">=</span> <span class="kc">true</span>
+   <span class="nx">t</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="nx">mySet</span><span class="p">))</span> <span class="c1">// 2
+</span><span class="c1"></span>   <span class="nb">delete</span><span class="p">(</span><span class="nx">mySet</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+   <span class="nx">t</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="nx">mySet</span><span class="p">))</span> <span class="c1">// 1
+</span><span class="c1"></span><span class="p">}</span>
 </code></pre></td></tr></table>
 </div>
 </div></div><div class="post-footer" id="post-footer">
